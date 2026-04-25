@@ -1,0 +1,10 @@
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_1.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_2.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_3.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_4.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_5.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_6.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_7.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_8.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_9.csv' WITH (FORMAT csv, HEADER true);
+COPY staging_mock_data FROM '/docker-entrypoint-initdb.d/data/mock_data_10.csv' WITH (FORMAT csv, HEADER true);
