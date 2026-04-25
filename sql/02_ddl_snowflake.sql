@@ -40,7 +40,6 @@ CREATE TABLE IF NOT EXISTS dim_store (
     CONSTRAINT uq_store_name UNIQUE (name)
 );
 
--- 5. Поставщики
 CREATE TABLE IF NOT EXISTS dim_supplier (
     supplier_id SERIAL PRIMARY KEY,
     name VARCHAR(255),
@@ -52,7 +51,6 @@ CREATE TABLE IF NOT EXISTS dim_supplier (
     CONSTRAINT uq_supplier_email UNIQUE (email)
 );
 
--- 6. Категории товаров
 CREATE TABLE IF NOT EXISTS dim_product_category (
     category_id SERIAL PRIMARY KEY,
     category_name VARCHAR(100),
@@ -60,7 +58,6 @@ CREATE TABLE IF NOT EXISTS dim_product_category (
     CONSTRAINT uq_product_category UNIQUE (category_name, pet_category)
 );
 
--- 7. Товары
 CREATE TABLE IF NOT EXISTS dim_product (
     product_id SERIAL PRIMARY KEY,
     name VARCHAR(255),
@@ -79,7 +76,6 @@ CREATE TABLE IF NOT EXISTS dim_product (
     CONSTRAINT uq_product_name UNIQUE (name)
 );
 
--- 8. Факты продаж
 CREATE TABLE IF NOT EXISTS fact_sales (
     sale_id SERIAL PRIMARY KEY,
     sale_date DATE,
